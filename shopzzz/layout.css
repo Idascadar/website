@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+body {
+    min-height: 100vh;
+    font-family: 'poppins',sans-serif;
+    background-image: url(home2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.navbar{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+.navbar ul h1{
+    margin-right: auto;
+    padding: 10px;
+}
+.navbar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar nav ul li{
+    height: 50px;
+}
+.navbar nav ul li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: darkblue;
+}
+.navbar ul h2{
+    display: none;
+    padding: 0 10px 0 0;
+
+}
+
+.navbar nav ul li a:hover{
+    text-decoration: wavy;
+    color: darkcyan;
+}
+.sidebar nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    height: 97vh;
+    width: 40vh;
+    
+    display: none;
+}
+.sidebar ul{
+    width: 100%;
+    list-style: none;
+    }
+.sidebar nav ul li a{
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar nav ul li a:hover{
+    text-decoration: wavy;
+    color: darkcyan;
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .sidebar nav{
+        display: block;
+    }
+    .sidebar nav ul li a{
+        width: 100%;
+        display: block;
+    }
+    .navbar ul h2{
+        display: block;
+    
+    }
+    .navbar nav ul li a{
+        display: none;
+    }
+    }
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+  
